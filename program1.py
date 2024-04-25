@@ -6,7 +6,7 @@ class Solution(object):
         """
         stack = []
         mapping = {')': '(', '}': '{', ']': '['}
-        
+        # loop for each mapping
         for char in s:
             if char in mapping:
                 top_element = stack.pop() if stack else '#'
